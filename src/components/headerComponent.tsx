@@ -1,32 +1,14 @@
-import * as elements from 'typed-html';
+import * as elements from "typed-html";
 
 export function HeaderComponent() {
     return (
-        <header class="w-full border-b shadow-sm py-3 flex justify-center">
+        <header class="flex w-full justify-center border-b border-slate-800 py-3 shadow-sm">
             <nav class="flex gap-6">
                 <a
                     href="#"
-                    class="font-bold hover:text-neutral-500 text-neutral-400 transition-colors uppercase tracking-wider visited:text-neutral-300"
+                    class="font-semibold uppercase tracking-wide text-slate-600 transition-colors duration-300 hover:text-slate-500"
                 >
-                    link
-                </a>
-                <a
-                    href="#"
-                    class="font-bold hover:text-neutral-500 text-neutral-400 transition-colors uppercase tracking-wider visited:text-neutral-300"
-                >
-                    link
-                </a>
-                <a
-                    href="#"
-                    class="font-bold hover:text-neutral-500 text-neutral-400 transition-colors uppercase tracking-wider visited:text-neutral-300"
-                >
-                    link
-                </a>
-                <a
-                    href="#"
-                    class="font-bold hover:text-neutral-500 text-neutral-400 transition-colors uppercase tracking-wider visited:text-neutral-300"
-                >
-                    link
+                    Header Link
                 </a>
             </nav>
         </header>

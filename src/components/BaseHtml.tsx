@@ -1,6 +1,7 @@
-import * as elements from 'typed-html';
+import * as elements from "typed-html";
+import { BaseButton } from "./sendButton.tsx";
 
-export const BaseHtml = ({ children }: elements.Children) => `
+export const BaseHtml = () => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,6 +13,11 @@ export const BaseHtml = ({ children }: elements.Children) => `
         <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
     </head>
     
-    ${children}
+    ${(
+        <body class="grid justify-center gap-4 bg-slate-950 py-8">
+            <h1 class="mb-4 text-3xl font-semibold text-slate-100">Hello</h1>
+            <BaseButton />
+        </body>
+    )}
 </html>
 `;

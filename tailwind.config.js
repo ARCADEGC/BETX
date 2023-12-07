@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./src/**/*.{html,tsx}'],
+    content: ["./src/**/*.{html,tsx,svg}"],
     theme: {
         extend: {
             colors: {
-                signature: '#00F0FFFF',
+                signature: "#00F0FFFF",
             },
         },
     },
-    plugins: ['prettier-plugin-tailwindcss'],
+    plugins: [],
 };
